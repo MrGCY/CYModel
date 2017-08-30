@@ -7,23 +7,17 @@
 //
 
 #import "ViewController.h"
+#import "PersonModel.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSDictionary * dic = @{@"name":@"gaochenyang",@"school":@"university",@"sex":@"man"};
+    PersonModel * model = (PersonModel *)[PersonModel cy_modelWithDict:dic];
+    
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 @end

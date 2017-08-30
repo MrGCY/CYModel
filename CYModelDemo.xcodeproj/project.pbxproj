@@ -15,6 +15,8 @@
 		41233AE11F56992E00C2D624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41233ADF1F56992E00C2D624 /* LaunchScreen.storyboard */; };
 		41233AEC1F56992E00C2D624 /* CYModelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233AEB1F56992E00C2D624 /* CYModelDemoTests.m */; };
 		41233AF71F56992E00C2D624 /* CYModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233AF61F56992E00C2D624 /* CYModelDemoUITests.m */; };
+		41233B071F56994D00C2D624 /* CYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233B061F56994D00C2D624 /* CYModel.m */; };
+		41233B0A1F569F0900C2D624 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233B091F569F0900C2D624 /* PersonModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		41233AF21F56992E00C2D624 /* CYModelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYModelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41233AF61F56992E00C2D624 /* CYModelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYModelDemoUITests.m; sourceTree = "<group>"; };
 		41233AF81F56992E00C2D624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41233B051F56994D00C2D624 /* CYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYModel.h; sourceTree = "<group>"; };
+		41233B061F56994D00C2D624 /* CYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYModel.m; sourceTree = "<group>"; };
+		41233B081F569F0900C2D624 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
+		41233B091F569F0900C2D624 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		41233AD01F56992E00C2D624 /* CYModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				41233B041F56994100C2D624 /* CYModel */,
 				41233AD41F56992E00C2D624 /* AppDelegate.h */,
 				41233AD51F56992E00C2D624 /* AppDelegate.m */,
 				41233AD71F56992E00C2D624 /* ViewController.h */,
@@ -110,6 +117,8 @@
 				41233ADF1F56992E00C2D624 /* LaunchScreen.storyboard */,
 				41233AE21F56992E00C2D624 /* Info.plist */,
 				41233AD11F56992E00C2D624 /* Supporting Files */,
+				41233B081F569F0900C2D624 /* PersonModel.h */,
+				41233B091F569F0900C2D624 /* PersonModel.m */,
 			);
 			path = CYModelDemo;
 			sourceTree = "<group>";
@@ -138,6 +147,15 @@
 				41233AF81F56992E00C2D624 /* Info.plist */,
 			);
 			path = CYModelDemoUITests;
+			sourceTree = "<group>";
+		};
+		41233B041F56994100C2D624 /* CYModel */ = {
+			isa = PBXGroup;
+			children = (
+				41233B051F56994D00C2D624 /* CYModel.h */,
+				41233B061F56994D00C2D624 /* CYModel.m */,
+			);
+			path = CYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41233B0A1F569F0900C2D624 /* PersonModel.m in Sources */,
 				41233AD91F56992E00C2D624 /* ViewController.m in Sources */,
+				41233B071F56994D00C2D624 /* CYModel.m in Sources */,
 				41233AD61F56992E00C2D624 /* AppDelegate.m in Sources */,
 				41233AD31F56992E00C2D624 /* main.m in Sources */,
 			);
