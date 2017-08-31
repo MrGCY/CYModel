@@ -41,7 +41,7 @@
         // 判断下value是否是字典,并且是自定义对象才需要转换 自定义对象也需要继承CYModel
         if ([value isKindOfClass:[NSDictionary class]] && ![propertyType hasPrefix:@"NS"]) {
             // 根据字符串类名生成类对象
-            Class modelClass = NSClassFromString(propertyType);
+            Class modelClass = objc_getClass([propertyName UTF8String]);
             if (modelClass) {
                 value = [modelClass cy_modelWithDict:value];
             }
@@ -67,7 +67,7 @@
         NSDictionary * arrayDic = [idSelf cy_arrayContainModelClass];
         if (arrayDic) {
             NSString * classStr = [arrayDic objectForKey:key];
-            Class modelClass = NSClassFromString(classStr);
+            Class modelClass = objc_getClass([classStr UTF8String]);
             for (NSDictionary * subDic in arr) {
                 id model = [modelClass cy_modelWithDict:subDic];
                 if (model) {
