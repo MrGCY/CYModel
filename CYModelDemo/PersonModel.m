@@ -9,5 +9,9 @@
 #import "PersonModel.h"
 
 @implementation PersonModel
-
+//【用在三级数组转换】
+- (NSDictionary *)cy_arrayContainModelClass
+{
+    return @{@"dogs" : @"Dog"};
+}
 @end

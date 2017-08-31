@@ -17,6 +17,7 @@
 		41233AF71F56992E00C2D624 /* CYModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233AF61F56992E00C2D624 /* CYModelDemoUITests.m */; };
 		41233B071F56994D00C2D624 /* CYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233B061F56994D00C2D624 /* CYModel.m */; };
 		41233B0A1F569F0900C2D624 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233B091F569F0900C2D624 /* PersonModel.m */; };
+		41233B101F57B17000C2D624 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 41233B0F1F57B17000C2D624 /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		41233B061F56994D00C2D624 /* CYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYModel.m; sourceTree = "<group>"; };
 		41233B081F569F0900C2D624 /* PersonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonModel.h; sourceTree = "<group>"; };
 		41233B091F569F0900C2D624 /* PersonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonModel.m; sourceTree = "<group>"; };
+		41233B0E1F57B17000C2D624 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		41233B0F1F57B17000C2D624 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				41233AD11F56992E00C2D624 /* Supporting Files */,
 				41233B081F569F0900C2D624 /* PersonModel.h */,
 				41233B091F569F0900C2D624 /* PersonModel.m */,
+				41233B0E1F57B17000C2D624 /* Dog.h */,
+				41233B0F1F57B17000C2D624 /* Dog.m */,
 			);
 			path = CYModelDemo;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41233B101F57B17000C2D624 /* Dog.m in Sources */,
 				41233B0A1F569F0900C2D624 /* PersonModel.m in Sources */,
 				41233AD91F56992E00C2D624 /* ViewController.m in Sources */,
 				41233B071F56994D00C2D624 /* CYModel.m in Sources */,
